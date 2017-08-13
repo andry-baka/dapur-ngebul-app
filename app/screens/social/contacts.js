@@ -3,7 +3,8 @@ import {
   ListView,
   View,
   StyleSheet,
-  TouchableOpacity
+  TouchableOpacity, 
+  StatusBar
 } from 'react-native';
 import _ from 'lodash';
 import {
@@ -34,6 +35,10 @@ export class Contacts extends React.Component {
     this.setData = this._setData.bind(this);
     this.renderHeader = this._renderHeader.bind(this);
     this.renderRow = this._renderRow.bind(this);
+  }
+
+  componentDidMount() {
+    StatusBar.setHidden(false, 'slide');
   }
 
   _setData(data) {
