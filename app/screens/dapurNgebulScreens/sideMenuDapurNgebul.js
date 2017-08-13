@@ -7,7 +7,6 @@ import {
   Platform,
   StyleSheet
 } from 'react-native';
-import { NavigationActions } from 'react-navigation';
 import { RkStyleSheet, RkText } from 'react-native-ui-kitten';
 import { FontAwesome } from '../../assets/icons';
 

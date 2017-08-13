@@ -44,7 +44,7 @@ const KittenApp = StackNavigator({
       contentComponent: (props) => <Screens.SideMenuDapurNgebul {...props}/>
     })
   }
-  // Home: {
+  // Home: {                              // original code
   //   screen: DrawerNavigator({
   //       ...AppRoutes,
   //     },
@@ -59,14 +59,15 @@ const KittenApp = StackNavigator({
 
 
 export default () => (
-  <KittenApp
-    onNavigationStateChange={(prevState, currentState) => {
-      const currentScreen = getCurrentRouteName(currentState);
-      const prevScreen = getCurrentRouteName(prevState);
+  <KittenApp />
+  // <KittenApp                              // original code
+  //   onNavigationStateChange={(prevState, currentState) => {
+  //     const currentScreen = getCurrentRouteName(currentState);
+  //     const prevScreen = getCurrentRouteName(prevState);
 
-      {/* if (prevScreen !== currentScreen) {
-        track(currentScreen);
-      } */}
-    }}
-  />
+  //     if (prevScreen !== currentScreen) {
+  //       track(currentScreen);
+  //     }
+  //   }}
+  // />
 );
