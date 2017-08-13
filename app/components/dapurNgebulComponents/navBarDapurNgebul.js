@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import _ from 'lodash';
 import {RkText, RkButton, RkStyleSheet} from 'react-native-ui-kitten';
-import {UIConstants} from '../config/appConstants';
+import {UIConstants} from '../../config/appConstants';
 
 export class NavBarDapurNgebul extends React.Component {
   constructor(props) {
@@ -78,7 +78,7 @@ let styles = RkStyleSheet.create(theme => ({
   layout: {
     backgroundColor: theme.colors.screen.base,
     paddingTop: UIConstants.StatusbarHeight,
-    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomWidth: 1,
     borderBottomColor: theme.colors.border.base
   },
   container: {
