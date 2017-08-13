@@ -7,8 +7,8 @@ import {withRkTheme} from 'react-native-ui-kitten';
 import {AppRoutes} from './config/navigation/routesBuilder';
 import * as Screens from './screens';
 import {bootstrap} from './config/bootstrap';
-import track from './config/analytics';
-import {data} from './data'
+// import track from './config/analytics';
+import {data} from './data';
 
 bootstrap();
 data.populateRealm();
@@ -31,14 +31,30 @@ const KittenApp = StackNavigator({
   },
   Home: {
     screen: DrawerNavigator({
-        ...AppRoutes,
+      Dashboard: {
+        screen: Screens.DashboardDapurNgebul
       },
-      {
-        contentComponent: (props) => <SideMenu {...props}/>
-      })
+      CustomFood1: {
+        screen: Screens.Dummy1
+      },
+      CustomFood2: {
+        screen: Screens.Dummy2
+      }
+    },{
+      contentComponent: (props) => <Screens.SideMenuDapurNgebul {...props}/>
+    })
   }
-}, {
-  headerMode: 'none',
+  // Home: {
+  //   screen: DrawerNavigator({
+  //       ...AppRoutes,
+  //     },
+  //     {
+  //       contentComponent: (props) => <SideMenu {...props}/>
+  //     })
+  // }
+},
+{
+  headerMode: 'none'
 });
 
 
@@ -48,9 +64,9 @@ export default () => (
       const currentScreen = getCurrentRouteName(currentState);
       const prevScreen = getCurrentRouteName(prevState);
 
-      if (prevScreen !== currentScreen) {
+      {/* if (prevScreen !== currentScreen) {
         track(currentScreen);
-      }
+      } */}
     }}
   />
 );
