@@ -43,14 +43,14 @@ export class DashboardDapurNgebul extends React.Component {
 
   render() {
     const listData = [
-      {title: 'Category 1', data: [<ShowcaseList backColor={'#48a9a6'} onPressFunc={() => this.props.navigation.navigate('FoodDetail', {title: 'Food Title', navigation: this.props.navigation})} />]},
-      {title: 'Category 2', data: [<ShowcaseList backColor={'#731dd8'} onPressFunc={() => this.props.navigation.navigate('FoodDetail', {title: 'Food Title', navigation: this.props.navigation})} />]},
-      {title: 'Category 3', data: [<ShowcaseList backColor={'#c1666b'} onPressFunc={() => this.props.navigation.navigate('FoodDetail', {title: 'Food Title', navigation: this.props.navigation})} />]},
+      {title: 'Category 1', data: [<ShowcaseList backColor={'#48a9a6'} onPressFunc={() => this.props.navigation.navigate('FoodDetail', {title: 'Food Title'})} />]},
+      {title: 'Category 2', data: [<ShowcaseList backColor={'#731dd8'} onPressFunc={() => this.props.navigation.navigate('FoodDetail', {title: 'Food Title'})} />]},
+      {title: 'Category 3', data: [<ShowcaseList backColor={'#c1666b'} onPressFunc={() => this.props.navigation.navigate('FoodDetail', {title: 'Food Title'})} />]},
     ];
 
     return (
       <View style={styles.container}>
-        <NavBarDapurNgebul navigation={this.props.navigation} title={'Foods'} left={FontAwesome.bars} right={FontAwesome.search} />
+        <NavBarDapurNgebul nav={this.props.navigation} title={'Foods'} left={FontAwesome.bars} right={FontAwesome.search} />
         <View style={styles.searchBarContainer}>
           <RkTextInput
             autoCapitalize='none'

@@ -13,7 +13,7 @@ export class FoodDetail extends React.Component {
     const { params } = this.props.navigation.state;
     return (
       <View style={{flex: 1}}>
-        <NavBarDapurNgebul navigation={params.navigation} title={params.title} left={null} right={null} />
+        <NavBarDapurNgebul nav={this.props.navigation} title={params.title} left={null} right={null} />
         <ScrollView style={styles.root}>
           <RkCard rkType='article'>
             <Image rkCardImg source={require('../../data/img/photo18.png')}/>

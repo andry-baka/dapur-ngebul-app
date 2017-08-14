@@ -1,13 +1,8 @@
 import React from 'react';
-import {
-  StyleSheet,
-  View,
-  Dimensions
-} from 'react-native';
+import { StyleSheet, View, Dimensions } from 'react-native';
 import _ from 'lodash';
-import { NavigationActions } from 'react-navigation';
-import {RkText, RkButton, RkStyleSheet} from 'react-native-ui-kitten';
-import {UIConstants} from '../../config/appConstants';
+import { RkText, RkButton, RkStyleSheet } from 'react-native-ui-kitten';
+import { UIConstants } from '../../config/appConstants';
 import { FontAwesome } from '../../assets/icons';
 
 export class NavBarDapurNgebul extends React.Component {
@@ -41,16 +36,13 @@ export class NavBarDapurNgebul extends React.Component {
         ? <RkButton
             rkType='clear'
             style={styles.menu}
-            onPress={() => this.props.navigation.navigate('DrawerOpen')}>
+            onPress={() => this.props.nav.navigate('DrawerOpen')}>
             <RkText rkType='awesome'>{FontAwesome.bars}</RkText>
           </RkButton>
         : <RkButton
             rkType='clear'
             style={styles.menu}
-            onPress={() => this.props.navigation.dispatch(new NavigationActions.reset({
-                index: 0,
-                actions: [NavigationActions.navigate({ routeName: 'Home' })]
-            }))}>
+            onPress={() => this.props.nav.goBack()}>
             <RkText rkType='awesome hero'>{FontAwesome.chevronLeft}</RkText>
           </RkButton>}
       </View>
