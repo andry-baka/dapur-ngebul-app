@@ -20,7 +20,6 @@ import {scale, scaleModerate, scaleVertical} from '../../utils/scale';
 let timeFrame = 500;
 
 export class SplashScreen extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -36,7 +35,6 @@ export class SplashScreen extends React.Component {
       if (this.state.progress == 1) {
         clearInterval(this.timer);
         setTimeout(() => {
-          StatusBar.setHidden(false, 'slide');
           let toHome = NavigationActions.reset({
             index: 0,
             actions: [NavigationActions.navigate({routeName: 'Home'})]
@@ -60,14 +58,14 @@ export class SplashScreen extends React.Component {
     return (
       <View style={styles.container}>
         <View>
-          <Image style={[styles.image, {width}]} source={require('../../assets/images/splashBack.png')}/>
+          <Image style={[styles.image, {width}]} source={require('../../assets/images/DapurNgebulLogo.png')}/>
           <View style={styles.text}>
             <RkText rkType='light' style={styles.hero}>Mitrais Innov-a-thon</RkText>
             <RkText rkType='logo' style={styles.appName}>Dapur Ngebul</RkText>
           </View>
         </View>
         <ProgressBar
-          color={RkTheme.current.colors.accent}
+          color={'#c00000'}
           style={styles.progress}
           progress={this.state.progress} width={scale(320)}/>
       </View>
@@ -90,9 +88,11 @@ let styles = StyleSheet.create({
   },
   hero: {
     fontSize: 37,
+    color: '#c00000'
   },
   appName: {
-    fontSize: 62,
+    fontSize: 50,
+
   },
   progress: {
     alignSelf: 'center',
