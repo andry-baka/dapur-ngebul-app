@@ -5,8 +5,10 @@ import {
   Dimensions
 } from 'react-native';
 import _ from 'lodash';
+import { NavigationActions } from 'react-navigation';
 import {RkText, RkButton, RkStyleSheet} from 'react-native-ui-kitten';
 import {UIConstants} from '../../config/appConstants';
+import { FontAwesome } from '../../assets/icons';
 
 export class NavBarDapurNgebul extends React.Component {
   constructor(props) {
@@ -27,20 +29,30 @@ export class NavBarDapurNgebul extends React.Component {
       );
   }
 
-  _renderLeft(headerLeft) {
+  _renderLeft(drawer) {
     let windowWidth = Dimensions.get('window').width;
     const width = this.state.width
       ? (windowWidth - this.state.width) / 2
       : undefined;
-
+      
     return (
       <View style={[{width}, styles.left]}>
-        <RkButton
-          rkType='clear'
-          style={styles.menu}
-          onPress={() => this.props.navigation.navigate('DrawerOpen')}>
-          <RkText rkType='awesome'>{headerLeft}</RkText>
-        </RkButton>
+        {drawer
+        ? <RkButton
+            rkType='clear'
+            style={styles.menu}
+            onPress={() => this.props.navigation.navigate('DrawerOpen')}>
+            <RkText rkType='awesome'>{FontAwesome.bars}</RkText>
+          </RkButton>
+        : <RkButton
+            rkType='clear'
+            style={styles.menu}
+            onPress={() => this.props.navigation.dispatch(new NavigationActions.reset({
+                index: 0,
+                actions: [NavigationActions.navigate({ routeName: 'Home' })]
+            }))}>
+            <RkText rkType='awesome hero'>{FontAwesome.chevronLeft}</RkText>
+          </RkButton>}
       </View>
     )
   }

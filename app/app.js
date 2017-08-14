@@ -43,6 +43,9 @@ const KittenApp = StackNavigator({
     },{
       contentComponent: (props) => <Screens.SideMenuDapurNgebul {...props}/>
     })
+  },
+  FoodDetail: {
+    screen: Screens.FoodDetail
   }
   // Home: {                              // original code
   //   screen: DrawerNavigator({
