@@ -11,8 +11,9 @@ let longText = 'Some of the core team will be working directly on GitHub. These 
 export class FoodDetail extends React.Component {
   render() {
     const { params } = this.props.navigation.state;
+    
     return (
-      <View style={{flex: 1}}>
+      <View style={{flex: 1, backgroundColor: 'white'}}>
         <NavBarDapurNgebul nav={this.props.navigation} title={params.title} left={null} right={null} />
         <ScrollView style={styles.root}>
           <RkCard rkType='article'>
@@ -34,7 +35,10 @@ export class FoodDetail extends React.Component {
           </RkCard>
         </ScrollView>
         <View style={styles.buttonContainer}>
-          <TouchableHighlight activeOpacity={0.8} onPress={() => null} underlayColor={'#eaa846'}>
+          <TouchableHighlight
+            activeOpacity={0.8}
+            onPress={() => this.props.navigation.navigate('CustomizeFood', {title: 'Adjust Ingredient'})}
+            underlayColor={'#eaa846'}>
             <View style={styles.leftButton}>
               <RkText style={{color: 'black'}} rkType='header4'>Customize</RkText>
             </View>
