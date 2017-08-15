@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, TextInput, Switch, ScrollView, Dimensions } from 'react-native';
+import { RkText } from 'react-native-ui-kitten';
 
 const windowWidth = Dimensions.get('window').width;
 const items = [
@@ -9,8 +10,15 @@ const items = [
   {label: 'Label 4', type: 'switch', unit: null},
 ];
 
-export const CustomIngredient = ({ data = items }) => {
-  function inputType(type) {
+export class CustomIngredient extends React.Component {
+  constructor() {
+    super();
+    this.state = {    // delete this later
+      status: false
+    };
+  }
+
+  _inputType(type) {
     if (type === 'fill') {
       return (
         <TextInput
@@ -20,37 +28,56 @@ export const CustomIngredient = ({ data = items }) => {
       );
     } else if (type === 'switch') {
       return (
+        <View style={styles.switchContainer}>
         <Switch
-          onValueChange={(value) => console.log('changed')}/>
+          onValueChange={(value) => this.setState({status: value})}
+          value={this.state.status}/>
+        </View>
       );
     }
   }
 
-  return (
-    <ScrollView>
-      {data.map((item, index) => (
-        <View key={index} style={styles.itemContainer}>
-          <Text>{item.label}</Text>
-          {inputType(item.type)}
-          <Text>{item.unit}</Text>
-        </View>
-      ))}
-    </ScrollView>
-  );
+  render() {
+    const { data = items } = this.props;
+
+    return (
+      <ScrollView style={{marginTop: 10}}>
+        {data.map((item, index) => (
+          <View key={index} style={styles.itemContainer}>
+            <RkText style={styles.title} rkType='header5'>{item.label}</RkText>
+            {this._inputType(item.type)}
+            <Text>{item.unit}</Text>
+          </View>
+        ))}
+      </ScrollView>
+    );
+  }
 };
 
 const styles = StyleSheet.create({
+  title: {
+    marginLeft: 7,
+    width: windowWidth * 0.4
+  },
   itemContainer: {
     width: windowWidth,
     flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center'
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    marginTop: 10
   },
   input: {
     borderRadius: 3,
     height: windowWidth * 0.1,
     width: windowWidth * 0.2,
     paddingHorizontal: 8,
+    marginRight: 10,
     fontSize: windowWidth * 0.035
+  },
+  switchContainer: {
+    height: windowWidth * 0.1,
+    width: windowWidth * 0.2,
+    justifyContent: 'center',
+    alignItems: 'flex-start'
   }
 });
