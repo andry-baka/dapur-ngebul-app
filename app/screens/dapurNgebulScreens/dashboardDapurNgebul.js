@@ -3,7 +3,7 @@ import { View, Text, SectionList, StyleSheet, ToastAndroid, Dimensions, StatusBa
 import { RkTextInput, RkText } from 'react-native-ui-kitten';
 
 import { FontAwesome } from '../../assets/icons';
-import { NavBarDapurNgebul, ShowcaseList } from '../../components/dapurNgebulComponents';
+import { NavBarDapurNgebul, ShowcaseList, BottomButtonDapurNgebul } from '../../components/dapurNgebulComponents';
 
 let windowWidth = Dimensions.get('window').width;
 
@@ -66,6 +66,7 @@ export class DashboardDapurNgebul extends React.Component {
           renderItem={this._renderItem}
           renderSectionHeader={this._renderSection}
         />
+        <BottomButtonDapurNgebul text={'Add Custom Recipe'} onPressFunc={() => null}/>
       </View>
     );
   }
