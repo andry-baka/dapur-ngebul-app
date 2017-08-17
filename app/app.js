@@ -45,10 +45,13 @@ const KittenApp = StackNavigator({
     })
   },
   FoodDetail: {
-    screen: Screens.FoodDetail
+    screen: Screens.FoodDetailDapurNgebul
   },
   CustomizeFood: {
-    screen: Screens.CustomizeFood
+    screen: Screens.CustomizeFoodDapurNgebul
+  },
+  CustomRecipe: {
+    screen: Screens.CustomRecipeDapurNgebul
   }
   // Home: {                              // original code
   //   screen: DrawerNavigator({
