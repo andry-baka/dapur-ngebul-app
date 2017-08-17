@@ -66,7 +66,7 @@ export class DashboardDapurNgebul extends React.Component {
           renderItem={this._renderItem}
           renderSectionHeader={this._renderSection}
         />
-        <BottomButtonDapurNgebul text={'Add Custom Recipe'} onPressFunc={() => null}/>
+        <BottomButtonDapurNgebul text={'Add Custom Recipe'} onPressFunc={() => this.props.navigation.navigate('CustomRecipe', {title: 'Your own recipe'})}/>
       </View>
     );
   }
