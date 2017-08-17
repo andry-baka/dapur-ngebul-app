@@ -24,7 +24,9 @@ export class CustomIngredient extends React.Component {
         <TextInput
           style={styles.input}
           onChangeText={null}
-          placeholder={'amount'} />
+          placeholder={'amount'}
+          keyboardType='numeric'
+          maxLength={2} />
       );
     } else if (type === 'switch') {
       return (
@@ -41,7 +43,7 @@ export class CustomIngredient extends React.Component {
     const { data = items } = this.props;
 
     return (
-      <ScrollView style={{marginTop: 10}}>
+      <ScrollView style={{marginTop: 10, marginLeft: 10}}>
         {data.map((item, index) => (
           <View key={index} style={styles.itemContainer}>
             <RkText style={styles.title} rkType='header5'>{item.label}</RkText>
@@ -67,6 +69,8 @@ const styles = StyleSheet.create({
     marginTop: 10
   },
   input: {
+    borderColor: '#efefef',
+    borderWidth: 1,
     borderRadius: 3,
     height: windowWidth * 0.1,
     width: windowWidth * 0.2,
