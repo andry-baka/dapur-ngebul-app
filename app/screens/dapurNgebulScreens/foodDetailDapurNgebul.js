@@ -8,7 +8,7 @@ import { NavBarDapurNgebul, BottomButtonDapurNgebul } from '../../components/dap
 let windowWidth = Dimensions.get('window').width;
 let longText = 'Some of the core team will be working directly on GitHub. These changes will be public from the beginning. Other changesets will come via a bridge with Facebook\'s internal source control. This is a necessity as it allows engineers at Facebook outside of the core team to move fast and contribute from an environment they are comfortable in. When a change made on GitHub is approved, it will first be imported into Facebook\'s internal source control. The change will eventually sync back to GitHub as a single commit once it has passed all internal tests.'
 
-export class FoodDetail extends React.Component {
+export class FoodDetailDapurNgebul extends React.Component {
   render() {
     const { params } = this.props.navigation.state;
     
