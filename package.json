@@ -1,9 +1,10 @@
 {
-  "name": "kittenTricks",
-  "version": "1.0.9",
+  "name": "dapurNgebul",
+  "version": "0.0.1",
   "private": true,
-  "author": "akveo",
+  "author": "DapurNgebulTeam",
   "scripts": {
+    "android:build": "cd android && ./gradlew assembleRelease",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "version": "./scripts/version-update.sh"
