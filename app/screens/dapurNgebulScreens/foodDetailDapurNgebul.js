@@ -3,8 +3,12 @@ import { View, StyleSheet, ScrollView, Image, TouchableOpacity, Dimensions } fro
 import { RkCard, RkText } from 'react-native-ui-kitten';
 
 import { Avatar } from '../../components';
-import { NavBarDapurNgebul, BottomButtonDapurNgebul, ModalDialog } from '../../components/dapurNgebulComponents';
-import Modal from 'react-native-modal'
+import {
+  NavBarDapurNgebul,
+  BottomButtonDapurNgebul,
+  ModalDialog
+} from '../../components/dapurNgebulComponents';
+import Modal from 'react-native-modal';
 
 let windowWidth = Dimensions.get('window').width;
 let longText = 'Some of the core team will be working directly on GitHub. These changes will be public from the beginning. Other changesets will come via a bridge with Facebook\'s internal source control. This is a necessity as it allows engineers at Facebook outside of the core team to move fast and contribute from an environment they are comfortable in. When a change made on GitHub is approved, it will first be imported into Facebook\'s internal source control. The change will eventually sync back to GitHub as a single commit once it has passed all internal tests.'
@@ -55,7 +59,7 @@ export class FoodDetailDapurNgebul extends React.Component {
           <BottomButtonDapurNgebul
             extraStyle={styles.rightButton}
             text={'Order Now'}
-            onPressFunc={() => this.setState({ modalVisible: true }) }/>
+            onPressFunc={() => this.setState({ modalVisible: true })}/>
         </View>
       </View>
     );
