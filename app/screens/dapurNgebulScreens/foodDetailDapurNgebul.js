@@ -44,6 +44,7 @@ export class FoodDetailDapurNgebul extends React.Component {
 
           <ModalDialog
             modalVisible={this.state.modalVisible}
+            contentTitle="Thank You!"
             contentText="You've been purchased food with your own custom recipe. Now you may proceed to payment or continue browsing foods.">
           </ModalDialog>
 

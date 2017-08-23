@@ -32,6 +32,9 @@ export class ModalDialog extends React.Component {
 
   _renderModalContent = () => (
     <View style={styles.modalContent}>
+      <View style={styles.contentTitle}>
+        <RkText rkType='header4'>{this.props.contentTitle}</RkText>
+      </View>
       <View style={styles.contentText}>
         <RkText rkType='primary3 bigLine'>{this.props.contentText}</RkText>
       </View>
@@ -62,7 +65,7 @@ export class ModalDialog extends React.Component {
 
 const styles = StyleSheet.create({
   modalContent: {
-    height: 250,
+    height: 300,
     backgroundColor: 'white',
     padding: 20,
     justifyContent: 'center',
@@ -70,9 +73,14 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     borderColor: 'rgba(0, 0, 0, 0.1)',
   },
+  contentTitle: {
+    flex: 1,
+    marginTop: 20,
+  },
   contentText: {
     flex: 1,
     margin: 20,
+    marginTop: -20,
   },
   actions: {
     flexDirection: 'row',
