@@ -1,4 +1,4 @@
-package com.akveo.kittenTricks;
+package com.akveo.dapurNgebul;
 
 import android.app.Application;
 
