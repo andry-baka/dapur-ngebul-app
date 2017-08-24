@@ -78,7 +78,7 @@ apply from: "../../node_modules/react-native/react.gradle"
  * the correct one based on the CPU architecture of their device.
  */
 def enableSeparateBuildPerCPUArchitecture = false
-// def pass = getPassword("alexei","kittenTricks_keystore")
+// def pass = getPassword("alexei","dapurNgebul_keystore")
 
 /**
  * Run Proguard to shrink the Java bytecode in release builds.
@@ -90,7 +90,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "com.akveo.kittenTricks"
+        applicationId "com.akveo.dapurNgebul"
         minSdkVersion 16
         targetSdkVersion 22
         ndk {

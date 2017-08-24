@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:kittenTricks.xcodeproj">
+      location = "self:/Users/alexei/dev/dapurNgebul/ios/dapurNgebul.xcodeproj">
    </FileRef>
 </Workspace>

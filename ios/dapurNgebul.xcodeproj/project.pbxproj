@@ -285,13 +285,13 @@
 		0A889C6AB253422D9E0743EF /* libRealmReact.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRealmReact.a; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* kittenTricks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kittenTricks.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = kittenTricks/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = kittenTricks/AppDelegate.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* dapurNgebul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dapurNgebul.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = dapurNgebul/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = dapurNgebul/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = kittenTricks/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = kittenTricks/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = kittenTricks/main.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = dapurNgebul/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = dapurNgebul/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = dapurNgebul/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		15DC83E736634D0A973D2FAC /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../app/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		4A78E145B445401A8C76FFAA /* libRCTGoogleAnalyticsBridge.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTGoogleAnalyticsBridge.a; sourceTree = "<group>"; };
@@ -407,7 +407,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* kittenTricks */ = {
+		13B07FAE1A68108700A75B9A /* dapurNgebul */ = {
 			isa = PBXGroup;
 			children = (
 				AA429D721EEEA09F00A8EAA3 /* RCTGoogleAnalyticsBridge.xcodeproj */,
@@ -419,7 +419,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = kittenTricks;
+			name = dapurNgebul;
 			sourceTree = "<group>";
 		};
 		146834001AC3E56700842450 /* Products */ = {
@@ -517,7 +517,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* kittenTricks */,
+				13B07FAE1A68108700A75B9A /* dapurNgebul */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				267D05B5106C4039A5D1510D /* Resources */,
@@ -530,7 +530,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* kittenTricks.app */,
+				13B07F961A680F5B00A75B9A /* dapurNgebul.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -579,9 +579,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		13B07F861A680F5B00A75B9A /* kittenTricks */ = {
+		13B07F861A680F5B00A75B9A /* dapurNgebul */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "kittenTricks" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "dapurNgebul" */;
 			buildPhases = (
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
@@ -592,9 +592,9 @@
 			);
 			dependencies = (
 			);
-			name = kittenTricks;
+			name = dapurNgebul;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* kittenTricks.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* dapurNgebul.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -612,7 +612,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "kittenTricks" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "dapurNgebul" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -691,7 +691,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* kittenTricks */,
+				13B07F861A680F5B00A75B9A /* dapurNgebul */,
 			);
 		};
 /* End PBXProject section */
@@ -985,7 +985,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = kittenTricks;
+			path = dapurNgebul;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1008,28 +1008,28 @@
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 				);
 				"HEADER_SEARCH_PATHS[arch=*]" = "$(inherited)";
-				INFOPLIST_FILE = kittenTricks/Info.plist;
+				INFOPLIST_FILE = dapurNgebul/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/kittenTricks\"",
-					"\"$(SRCROOT)/kittenTricks\"",
-					"\"$(SRCROOT)/kittenTricks\"",
-					"\"$(SRCROOT)/kittenTricks\"",
+					"\"$(SRCROOT)/dapurNgebul\"",
+					"\"$(SRCROOT)/dapurNgebul\"",
+					"\"$(SRCROOT)/dapurNgebul\"",
+					"\"$(SRCROOT)/dapurNgebul\"",
 				);
 				"LIBRARY_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
-					"\"$(SRCROOT)/kittenTricks\"",
-					"\"$(SRCROOT)/kittenTricks\"",
-					"\"$(SRCROOT)/kittenTricks\"",
+					"\"$(SRCROOT)/dapurNgebul\"",
+					"\"$(SRCROOT)/dapurNgebul\"",
+					"\"$(SRCROOT)/dapurNgebul\"",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.akveo.kittentricks;
-				PRODUCT_NAME = kittenTricks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akveo.dapurNgebul;
+				PRODUCT_NAME = dapurNgebul;
 				PROVISIONING_PROFILE = "b9879fc2-e7c4-47c9-97db-35a91901d0b1";
 				PROVISIONING_PROFILE_SPECIFIER = "Kitten Tricks Provisioning";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1052,24 +1052,24 @@
 					"$(SRCROOT)/../node_modules/realm/src/**",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 				);
-				INFOPLIST_FILE = kittenTricks/Info.plist;
+				INFOPLIST_FILE = dapurNgebul/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/kittenTricks\"",
-					"\"$(SRCROOT)/kittenTricks\"",
-					"\"$(SRCROOT)/kittenTricks\"",
-					"\"$(SRCROOT)/kittenTricks\"",
+					"\"$(SRCROOT)/dapurNgebul\"",
+					"\"$(SRCROOT)/dapurNgebul\"",
+					"\"$(SRCROOT)/dapurNgebul\"",
+					"\"$(SRCROOT)/dapurNgebul\"",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.akveo.kittentricks;
-				PRODUCT_NAME = kittenTricks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akveo.dapurNgebul;
+				PRODUCT_NAME = dapurNgebul;
 				PROVISIONING_PROFILE = "9bffb4e8-468b-4197-bfa4-4b6242a2a230";
-				PROVISIONING_PROFILE_SPECIFIER = KittenTricksAddHoc;
+				PROVISIONING_PROFILE_SPECIFIER = dapurNgebulAddHoc;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1163,7 +1163,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "kittenTricks" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "dapurNgebul" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1172,7 +1172,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "kittenTricks" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "dapurNgebul" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
