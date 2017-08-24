@@ -4,14 +4,12 @@ import { View, Text, ScrollView, TouchableOpacity, StyleSheet, Dimensions, Image
 let windowWidth = Dimensions.get('window').width;
 
 const dummy = [
-  {title: 'Taro marble cake', image: require('../../data/img/taro.jpg')},
-  {title: 'Pancake', image: require('../../data/img/photo18.png')},
-  {title: 'Bday cake', image: require('../../data/img/cake2.jpg')},
-  {title: 'Mango cake', image: require('../../data/img/Image 6.png')},
-  {title: 'Pandan cake', image: require('../../data/img/cake1.jpg')},
+  {title: 'Cocktail', image: require('../../data/img/photo48.png')},
+  {title: 'Coffee', image: require('../../data/img/Image 5.png')},
+  {title: 'Strawberry', image: require('../../data/img/strawberry.jpeg')},
 ];
 
-export const ShowcaseList = function({ backColor, data = dummy, onPressFunc }) {
+export const ShowcaseListDrink = function({ backColor, data = dummy, onPressFunc }) {
   return (
     <ScrollView style={{marginVertical: 15}} horizontal={true}>
       {data.map((item, index) => (

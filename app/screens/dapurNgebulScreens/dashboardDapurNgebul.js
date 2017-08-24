@@ -3,7 +3,13 @@ import { View, Text, SectionList, StyleSheet, ToastAndroid, Dimensions, StatusBa
 import { RkTextInput, RkText } from 'react-native-ui-kitten';
 
 import { FontAwesome } from '../../assets/icons';
-import { NavBarDapurNgebul, ShowcaseList, BottomButtonDapurNgebul } from '../../components/dapurNgebulComponents';
+import {
+  NavBarDapurNgebul,
+  ShowcaseList,
+  ShowcaseListDrink,
+  ShowcaseListSpicy,
+  BottomButtonDapurNgebul
+} from '../../components/dapurNgebulComponents';
 
 let windowWidth = Dimensions.get('window').width;
 
@@ -43,9 +49,9 @@ export class DashboardDapurNgebul extends React.Component {
 
   render() {
     const listData = [
-      {title: 'Category 1', data: [<ShowcaseList backColor={'#48a9a6'} onPressFunc={() => this.props.navigation.navigate('FoodDetail', {title: 'Food Title'})} />]},
-      {title: 'Category 2', data: [<ShowcaseList backColor={'#731dd8'} onPressFunc={() => this.props.navigation.navigate('FoodDetail', {title: 'Food Title'})} />]},
-      {title: 'Category 3', data: [<ShowcaseList backColor={'#c1666b'} onPressFunc={() => this.props.navigation.navigate('FoodDetail', {title: 'Food Title'})} />]},
+      {title: 'Cake and Sweet', data: [<ShowcaseList backColor={'#48a9a6'} onPressFunc={() => this.props.navigation.navigate('FoodDetail', {title: 'Cake and Sweet'})} />]},
+      {title: 'Drink', data: [<ShowcaseListDrink backColor={'#731dd8'} onPressFunc={() => this.props.navigation.navigate('FoodDetail', {title: 'Drink'})} />]},
+      {title: 'Spicy', data: [<ShowcaseListSpicy backColor={'#c1666b'} onPressFunc={() => this.props.navigation.navigate('FoodDetail', {title: 'Spicy'})} />]},
     ];
 
     return (
