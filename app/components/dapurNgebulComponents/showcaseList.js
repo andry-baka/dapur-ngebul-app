@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, ScrollView, TouchableOpacity, StyleSheet, Dimensions } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, StyleSheet, Dimensions, Image } from 'react-native';
 
 let windowWidth = Dimensions.get('window').width;
 const dummy = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
@@ -13,7 +13,7 @@ export const ShowcaseList = function({ backColor, data = dummy, onPressFunc }) {
             {/*<View style={[styles.itemUpperContainer, {backgroundColor: backColor}]}>
               <Text style={{fontWeight: '500', color: 'white'}}>Photo</Text>
             </View>*/}
-            <Image source={require(".../../data/img/photo18.png")} />
+            <Image rkCardImg source={require("../../data/img/photo18.png")} />
             <View style={styles.itemLowerContainer}>
               <Text style={{fontWeight: '300', fontStyle: 'italic'}}>Title</Text>
             </View>
