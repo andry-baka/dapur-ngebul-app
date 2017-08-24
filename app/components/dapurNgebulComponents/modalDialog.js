@@ -1,7 +1,9 @@
 import React from 'react';
-import { View, TouchableOpacity, StyleSheet, Dimensions } from 'react-native';
+import { View, TouchableOpacity, StyleSheet, Dimensions, Platform } from 'react-native';
 import { RkText } from 'react-native-ui-kitten';
 import Modal from 'react-native-modal';
+
+import SmsAndroid from 'react-native-sms-android';
 
 const windowWidth = Dimensions.get('window').width;
 
@@ -17,7 +19,37 @@ export class ModalDialog extends React.Component {
     }
   }
 
-  _closeModal = () => this.setState({ modalVisible: false });
+  _closeModal = () => {
+    if (Platform.OS === 'android') {
+      SmsAndroid.sms(
+        '087839186362', // phone number to send sms to 
+        'Order from DapurNgebul!' + this.props.orderText, // sms body 
+        'sendDirect', // sendDirect or sendIndirect 
+        (err, message) => {
+          if (err){
+            console.log("error");
+            alert("error sending sms to 087839186362");
+          } else {
+            console.log(message); // callback message
+          }
+        }
+      );
+      SmsAndroid.sms(
+        '085738429606', // phone number to send sms to 
+        'Order from DapurNgebul!' + this.props.orderText, // sms body 
+        'sendDirect', // sendDirect or sendIndirect 
+        (err, message) => {
+          if (err){
+            console.log("error");
+            alert("error sending sms to 081334272304");
+          } else {
+            console.log(message); // callback message
+          }
+        }
+      );
+    }
+    this.setState({ modalVisible: false })
+  };
 
   _displayModal = visible => this.setState({ modalVisible: visible });
 
@@ -39,7 +71,7 @@ export class ModalDialog extends React.Component {
         <RkText rkType='primary3 bigLine'>{this.props.contentText}</RkText>
       </View>
       <View style={styles.actions}>
-        {this._renderButton('Keep Browsing', this._closeModal)}
+        {this._renderButton('Pay Now', this._closeModal)}
         {this._renderButton('Pay Now', this._closeModal)}
       </View>
     </View>
