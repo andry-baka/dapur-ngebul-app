@@ -10,9 +10,10 @@ export const ShowcaseList = function({ backColor, data = dummy, onPressFunc }) {
       {data.map((item, index) => (
         <TouchableOpacity key={index} onPress={onPressFunc}>
           <View style={styles.itemContainer}>
-            <View style={[styles.itemUpperContainer, {backgroundColor: backColor}]}>
+            {/*<View style={[styles.itemUpperContainer, {backgroundColor: backColor}]}>
               <Text style={{fontWeight: '500', color: 'white'}}>Photo</Text>
-            </View>
+            </View>*/}
+            <Image source={require(".../../data/img/photo18.png")} />
             <View style={styles.itemLowerContainer}>
               <Text style={{fontWeight: '300', fontStyle: 'italic'}}>Title</Text>
             </View>
