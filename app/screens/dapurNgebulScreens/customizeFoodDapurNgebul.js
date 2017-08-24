@@ -12,9 +12,7 @@ import {
 
 const windowWidth = Dimensions.get('window').width;
 const items = [
-  {label: 'Tomato', type: 'fill', unit: 'pcs', stateKey: '1'},
-  {label: 'Chili', type: 'fill', unit: 'pcs', stateKey: '2'},
-  {label: 'Cheese', type: 'fill', unit: 'pcs', stateKey: '3'},
+  {label: 'Cheese', type: 'fill', unit: 'pcs', stateKey: 'cheese'},
   {label: 'Jumbo size?', type: 'switch', unit: null, stateKey: 'size'},
   {label: 'With Chocolate topping?', type: 'switch', unit: null, stateKey: 'topping'},
   {label: 'Extra chili?', type: 'switch', unit: null, stateKey: 'chili'},
@@ -28,6 +26,7 @@ export class CustomizeFoodDapurNgebul extends React.Component{
       size: true,
       topping: false,
       chili: false,
+      cheese: '',
       notes: ''
     };
   }
