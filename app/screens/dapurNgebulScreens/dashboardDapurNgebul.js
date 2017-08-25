@@ -13,6 +13,12 @@ import {
 
 let windowWidth = Dimensions.get('window').width;
 
+const longText = [
+  "Our top seller Marble Taro is a sweet bread made with mixed grains and filled with signature taro filling. The idea of marbling two different colored batters into a cake originated in nineteenth century Germany. Marble cakes made their way to America with German immigrants before the Civil War. Originally the cakes were marbled with molasses and spices",
+  "Text dua",
+  "Text tiga"
+];
+
 export class DashboardDapurNgebul extends React.Component {
   constructor(props) {
     super(props);
@@ -49,9 +55,9 @@ export class DashboardDapurNgebul extends React.Component {
 
   render() {
     const listData = [
-      {title: 'Cake and Sweet', data: [<ShowcaseList backColor={'#48a9a6'} onPressFunc={() => this.props.navigation.navigate('FoodDetail', {title: 'Cake and Sweet'})} />]},
-      {title: 'Drink', data: [<ShowcaseListDrink backColor={'#731dd8'} onPressFunc={() => this.props.navigation.navigate('FoodDetail', {title: 'Drink'})} />]},
-      {title: 'Spicy', data: [<ShowcaseListSpicy backColor={'#c1666b'} onPressFunc={() => this.props.navigation.navigate('FoodDetail', {title: 'Spicy'})} />]},
+      {title: 'Cake and Sweet', data: [<ShowcaseList backColor={'#48a9a6'} onPressFunc={() => this.props.navigation.navigate('FoodDetail', {title: 'Cake and Sweet', detailText: longText[0], imageSrc: require('../../data/img/cake1.jpg')})} />]},
+      {title: 'Drink', data: [<ShowcaseListDrink backColor={'#731dd8'} onPressFunc={() => this.props.navigation.navigate('FoodDetail', {title: 'Drink', detailText: longText[1], imageSrc: require('../../data/img/cake2.jpg')})} />]},
+      {title: 'Spicy', data: [<ShowcaseListSpicy backColor={'#c1666b'} onPressFunc={() => this.props.navigation.navigate('FoodDetail', {title: 'Spicy', detailText: longText[2], imageSrc: require('../../data/img/taro.jpg')})} />]},
     ];
 
     return (

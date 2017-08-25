@@ -27,7 +27,7 @@ export class FoodDetailDapurNgebul extends React.Component {
         <NavBarDapurNgebul nav={this.props.navigation} title={params.title} left={null} right={null} />
         <ScrollView style={styles.root}>
           <RkCard rkType='article'>
-            <Image rkCardImg source={require('../../data/img/taro.jpg')}/>
+            <Image rkCardImg source={params.imageSrc}/>
             <View rkCardHeader>
               <View>
                 <RkText style={styles.title} rkType='header4'>By DapurNgebul team</RkText>
@@ -39,7 +39,7 @@ export class FoodDetailDapurNgebul extends React.Component {
             </View>
             <View rkCardContent>
               <View>
-                <RkText rkType='primary3 bigLine'>{longText}</RkText>
+                <RkText rkType='primary3 bigLine'>{params.detailText}</RkText>
               </View>
             </View>
           </RkCard>
