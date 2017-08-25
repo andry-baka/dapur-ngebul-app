@@ -14,8 +14,8 @@ const windowWidth = Dimensions.get('window').width;
 const items = [
   {label: 'Cheese', type: 'fill', unit: 'pcs', stateKey: 'cheese'},
   {label: 'Jumbo size?', type: 'switch', unit: null, stateKey: 'size'},
-  {label: 'With Chocolate topping?', type: 'switch', unit: null, stateKey: 'topping'},
-  {label: 'Extra chili?', type: 'switch', unit: null, stateKey: 'chili'},
+  {label: 'With chocolate topping?', type: 'switch', unit: null, stateKey: 'topping'},
+  {label: 'With extra cheese?', type: 'switch', unit: null, stateKey: 'extraCheese'},
   {label: 'Extra notes', type: 'fill', unit: '', stateKey: 'notes'},
 ];
 export class CustomizeFoodDapurNgebul extends React.Component{
@@ -25,7 +25,7 @@ export class CustomizeFoodDapurNgebul extends React.Component{
       modalVisible: false,
       size: true,
       topping: false,
-      chili: false,
+      extraCheese: false,
       cheese: '',
       notes: ''
     };
@@ -74,12 +74,12 @@ export class CustomizeFoodDapurNgebul extends React.Component{
           </View>
         );
       }
-      if (stateKey === 'chili') {
+      if (stateKey === 'extraCheese') {
         return (
           <View style={styles.switchContainer}>
           <Switch
-            onValueChange={(value) => this.setState({chili: value})}
-            value={this.state.chili}/>
+            onValueChange={(value) => this.setState({extraCheese: value})}
+            value={this.state.extraCheese}/>
           </View>
         );
       }
@@ -110,7 +110,7 @@ export class CustomizeFoodDapurNgebul extends React.Component{
           modalVisible={this.state.modalVisible}
           contentTitle="Thank You!"
           contentText="You've been purchased food with your own custom recipe. Now you may proceed to payment or continue browsing foods."
-          orderText={`jumbo: ${this.state.size}, topping: ${this.state.topping}, chili: ${this.state.chili}, notes ${this.state.notes}`}
+          orderText={`jumbo: ${this.state.size}, chocolate: ${this.state.topping}, extraCheese: ${this.state.extraCheese}, notes: ${this.state.notes}`}
         >
         </ModalDialog>
 
@@ -159,7 +159,7 @@ const styles = StyleSheet.create({
     borderColor: '#efefef',
     borderWidth: 1,
     borderRadius: 3,
-    height: 100,
+    height: 200,
     width: windowWidth * 0.5,
     paddingHorizontal: 8,
     marginRight: 10,
