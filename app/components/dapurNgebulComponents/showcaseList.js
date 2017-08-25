@@ -5,7 +5,6 @@ let windowWidth = Dimensions.get('window').width;
 
 const dummy = [
   {title: 'Taro marble cake', image: require('../../data/img/taro.jpg')},
-  {title: 'Pancake', image: require('../../data/img/photo18.png')},
   {title: 'Bday cake', image: require('../../data/img/cake2.jpg')},
   {title: 'Mango cake', image: require('../../data/img/Image 6.png')},
   {title: 'Pandan cake', image: require('../../data/img/cake1.jpg')},

@@ -110,11 +110,7 @@ export class CustomizeFoodDapurNgebul extends React.Component{
           modalVisible={this.state.modalVisible}
           contentTitle="Thank You!"
           contentText="You've been purchased food with your own custom recipe. Now you may proceed to payment or continue browsing foods."
-          orderText={
-          `size: ${this.state.size},
-          topping: ${this.state.topping},
-          chili: ${this.state.chili},
-          notes ${this.state.notes}`}
+          orderText={`jumbo: ${this.state.size}, topping: ${this.state.topping}, chili: ${this.state.chili}, notes ${this.state.notes}`}
         >
         </ModalDialog>
 

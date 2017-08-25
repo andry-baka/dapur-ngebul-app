@@ -20,23 +20,24 @@ export class ModalDialog extends React.Component {
   }
 
   _closeModal = () => {
+    console.log('text: ',this.props.orderText);
     if (Platform.OS === 'android') {
-      SmsAndroid.sms(
-        '087839186362', // phone number to send sms to 
-        'Order from DapurNgebul!' + this.props.orderText, // sms body 
-        'sendDirect', // sendDirect or sendIndirect 
-        (err, message) => {
-          if (err){
-            console.log("error");
-            alert("error sending sms to 087839186362");
-          } else {
-            console.log(message); // callback message
-          }
-        }
-      );
+      // SmsAndroid.sms(
+      //   '087839186362', // phone number to send sms to 
+      //   'Order from DapurNgebul! ' + this.props.orderText, // sms body 
+      //   'sendDirect', // sendDirect or sendIndirect 
+      //   (err, message) => {
+      //     if (err){
+      //       console.log("error");
+      //       alert("error sending sms to 087839186362");
+      //     } else {
+      //       console.log(message); // callback message
+      //     }
+      //   }
+      // );
       SmsAndroid.sms(
         '085738429606', // phone number to send sms to 
-        'Order from DapurNgebul!' + this.props.orderText, // sms body 
+        'Order from DapurNgebul! ' + this.props.orderText, // sms body 
         'sendDirect', // sendDirect or sendIndirect 
         (err, message) => {
           if (err){

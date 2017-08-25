@@ -5,13 +5,11 @@ let windowWidth = Dimensions.get('window').width;
 
 const dummy = [
   {title: 'Pancake', image: require('../../data/img/photo18.png')},
-  {title: 'Food 1', image: require('../../data/img/Image 5.png')},
-  {title: 'Food 1', image: require('../../data/img/Image 6.png')},
-  {title: 'Food 1', image: require('../../data/img/cake1.jpg')},
+  {title: 'Snake cake', image: require('../../data/img/snakeCake.jpeg')},
+  {title: 'Turtle cake', image: require('../../data/img/turtle.jpg')},
 ];
 
-
-export const ShowcaseListSpicy= function({ backColor, data = dummy, onPressFunc }) {
+export const ShowcaseListExotic= function({ backColor, data = dummy, onPressFunc }) {
   return (
     <ScrollView style={{marginVertical: 15}} horizontal={true}>
       {data.map((item, index) => (
